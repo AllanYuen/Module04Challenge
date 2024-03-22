@@ -1,0 +1,114 @@
+/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+:root {
+    /* declare a variable with `--` syntax */
+    --dark: #13293d;
+    --light: #fff;
+    --navlink-color: #b9c6ae;
+    --font-color: magenta;
+    --text-size: 64px;
+    }
+ 
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {}
+
+body {
+    background-color: #eff5f8
+    display: block;
+    margin: 0px;
+  }
+
+p {
+    font-size: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    margin: 24px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #247BA0;
+    color: white;
+  }
+  
+input {
+  background-color: #f7f7f7;
+  }
+
+.title {
+    text-align: center;
+}
+
+.container {
+    display: block;
+    margin: 80px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60vw;
+    padding: 20px;
+    background-color: #f0ead6;
+  }
+
+.prev {
+text-align: center;
+width: 100px;
+height: 30px
+}
+
+.next {
+text-align: center;
+width: 100px;
+height: 30px;
+}
+
+#response {
+    padding-bottom: 30px;
+}
+
+  @media screen and (min-width: 600px) {
+    img {
+        min-width: 60%;
+    }
+  }
+
+  #msg {
+    visibility: hidden;
+    margin-top: 20px;
+    font-weight: 700;
+    height: 1.2em;
+    font-size: 1.2em;
+  }
+  
+  #msg.success,
+  #msg.error {
+    visibility: visible;
+  }
+  
+  #msg.success {
+    color: #001b44;;
+  }
+  
+  #msg.error {
+    color: #e6252c;
+  }
