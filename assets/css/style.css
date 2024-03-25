@@ -47,7 +47,7 @@ button {
     margin: 24px;
     cursor: pointer;
     font-size: 24px;
-    background-color: #247BA0;
+    background-color: darkmagenta;
     color: white;
   }
   
@@ -69,6 +69,11 @@ input {
     padding: 20px;
     background-color: #f0ead6;
   }
+
+.large-font {
+  font-size: 3.5em;
+  text-align:center;
+}
 
 .prev {
 text-align: center;
