@@ -1,10 +1,16 @@
-// Header element to manage the 'View High Scores' link and the countdown timer
+// Defining variables to support the Timed Quiz Challenge
 var headerEl = document.createElement("header");
+var viewHighScoresEl = document.createElement("a");
+var timerEl = document.createElement("div");
+var mainEl = document.createElement("main");
+var sectionEl = document.createElement("section");
+var h1El = document.createElement("h1");
+
+// Header element to manage the 'View High Scores' link and the countdown timer
 headerEl.setAttribute("id", "header");
 document.body.appendChild(headerEl);
 
 // Append the 'View High Scores' link to the header element
-var viewHighScoresEl = document.createElement("a");
 viewHighScoresEl.setAttribute("id", "view-high-scores");
 viewHighScoresEl.textContent = "View High Scores";
 viewHighScoresEl.style.cssText = `
@@ -17,9 +23,8 @@ viewHighScoresEl.style.cssText = `
 document.querySelector("#header").appendChild(viewHighScoresEl);
 
 // Append the countdown timer to the header element
-var timerEl = document.createElement("div");
 timerEl.setAttribute("id", "timer");
-timerEl.textContent = "Time: 0";
+timerEl.textContent = `Time: 0`;
 timerEl.style.cssText = `
     float: right;
     margin: 20px 20px 0 0;
@@ -28,21 +33,19 @@ timerEl.style.cssText = `
 document.querySelector("#header").appendChild(timerEl);
 
 // Container element to manage the main content of the page
-var mainEl = document.createElement("main");
-mainEl.setAttribute("id", "main");
-document.body.appendChild(mainEl);
+// mainEl.setAttribute("id", "main");
+// document.body.appendChild(mainEl);
 
-var sectionEl = document.createElement("section");
-containerEl.setAttribute("id", "section");
-document.querySelector("#main").appendChild(sectionEl);
+// containerEl.setAttribute("id", "section");
+// document.querySelector("#main").appendChild(sectionEl);
 
-var h1El = document.createElement("h1");
-h1El.textContent = "Coding Quiz Challenge";
-h1El.style.cssText = `
-    text-align: center;
-    margin-top: 20px;
-    `;
-document.querySelector("#section").appendChild(h1El);
+// h1El.setAttribute("id", "h1");
+// h1El.textContent = "Coding Quiz Challenge";
+// h1El.style.cssText = `
+//     text-align: center;
+//     margin-top: 20px;
+//     `;
+// document.querySelector("#section").appendChild(h1El);
 
 // Variables required to support Timed Quiz Challenge
 
